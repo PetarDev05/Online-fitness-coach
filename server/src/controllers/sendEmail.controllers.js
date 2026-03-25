@@ -7,7 +7,7 @@ export const sendEmail = async (req, res) => {
     const { data, error } = await resend.emails.send({
       from: "Petar <website@contact.fitcoach-demo.com>",
       to: ["petar.webdev05@gmail.com"],
-      subject: "CONTACT FORM TEST",
+      subject: "WEBSITE FORM TEST",
       html: `<div>
         <p>NAME: ${name}</p>
         <p>EMAIL: ${email}</p>
@@ -16,12 +16,12 @@ export const sendEmail = async (req, res) => {
     });
 
     if (error) {
-      return res.status(400).json({ message: error.message });
+      return res
+        .status(400)
+        .json({ message: "Something went wrong. Try again later." });
     }
 
-    res
-      .status(200)
-      .json({ message: "Message sent! Thanks for reaching out", data });
+    res.status(200).json({ message: "Message sent! Thanks for reaching out" });
   } catch (error) {
     res.status(400).json({
       message: error.message,

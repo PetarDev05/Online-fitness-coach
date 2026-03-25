@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary-light: #090909;
+  --text-light: #868686;
+  --heading-light: #222222;
+  --bg-light: #f5f5f5;
+  --card-light: #fff;
+  --shadow-light: #e1e1e1;
+  --border-light: #878787;
+  --nav-border-light: #e0e0e0;
+  --card-border-light: #cfcfcf;
+
+  --blue-light: #93c5fd;
+  --yellow-light: #fef08a;
+  --purple-light: #f5d0fe;
+  --purple-light-shadow: #e879f9;
+
+  /* --------------------------- */
+
+  --primary-dark: #e1e1e1;
+  --text-dark: #a1a1a1;
+  --heading-dark: #ececec;
+  --bg-dark: #060606;
+  --card-dark: #fff;
+  --shadow-dark: #e1e1e1;
+  --border-dark: #878787;
+  --nav-border-dark: #414141;
+  --card-border-dark: #404040;
+
+  --blue-dark: #1e40af;
+  --yellow-dark: #854d0e;
+  --purple-dark: #86198f;
+
+  --white: #fff;
+  --green: #38c05f;
+  --green-dark: #ffffff;
+  --blue: #4f7fd1;
+  --yellow: #ccc93d;
+  --purple: #9e4bd6;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 1.2rem;
+}
+
+a {
+  font-family: "Inter";
+}
+
+button {
+  font-weight: 500;
+}
+
+div > .logo,
+button,
+#price,
+li {
+  font-family: "Poppins";
+}
+
+@theme {
+  --shadow-pro-light: 0px 0px 7px 1px var(--blue-light);
+  --shadow-pro-dark: 0px 0px 7px 1px var(--blue-dark);
+  --shadow-program-light: 0px 0px 7px 1px var(--blue-light);
+  --shadow-program-dark: 0px 0px 7px 1px var(--blue-dark);
+}
