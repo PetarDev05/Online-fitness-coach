@@ -4,11 +4,11 @@ const Navigation = () => {
       <a href="#home" className="text-sm">
         Home
       </a>
-      <a href="#about" className="text-sm">
-        About me
-      </a>
       <a href="#testimonials" className="text-sm">
         Testimonials
+      </a>
+      <a href="#about" className="text-sm">
+        About me
       </a>
       <a href="#programs" className="text-sm">
         Programs

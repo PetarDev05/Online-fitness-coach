@@ -20,7 +20,12 @@
   --blue-light: #93c5fd;
   --yellow-light: #fef08a;
   --purple-light: #f5d0fe;
-  --purple-light-shadow: #e879f9;
+
+  --image-blue: #5b98de;
+  --image-yellow: #ded168;
+  --image-purple: #cf93de;
+
+  --green: #35d26c;
 
   /* --------------------------- */
 
@@ -39,11 +44,6 @@
   --purple-dark: #86198f;
 
   --white: #fff;
-  --green: #38c05f;
-  --green-dark: #ffffff;
-  --blue: #4f7fd1;
-  --yellow: #ccc93d;
-  --purple: #9e4bd6;
 }
 
 * {
@@ -89,9 +89,30 @@ li {
   font-family: "Poppins";
 }
 
+#home > h1 {
+  font-size: 4rem;
+  line-height: 80px;
+}
+
 @theme {
   --shadow-pro-light: 0px 0px 7px 1px var(--blue-light);
   --shadow-pro-dark: 0px 0px 7px 1px var(--blue-dark);
   --shadow-program-light: 0px 0px 7px 1px var(--blue-light);
   --shadow-program-dark: 0px 0px 7px 1px var(--blue-dark);
+
+  --shadow-yellow-light: inset 0px 0px 25px 7px var(--image-yellow);
+  --shadow-blue-light: inset 0px 0px 25px 7px var(--image-blue);
+  --shadow-purple-light: inset 0px 0px 25px 7px var(--image-purple);
+
+  --shadow-yellow-dark: inset 0px 0px 25px 7px var(--yellow-dark);
+  --shadow-blue-dark: inset 0px 0px 25px 7px var(--blue-dark);
+  --shadow-purple-dark: inset 0px 0px 25px 7px var(--purple-dark);
+
+  --shadow-t-blue-light: 0px 0px 5px 1px var(--image-blue);
+  --shadow-t-yellow-light: 0px 0px 5px 1px var(--image-yellow);
+  --shadow-t-purple-light: 0px 0px 5px 1px var(--image-purple);
+
+  --shadow-t-blue-dark: 0px 0px 5px 1px var(--blue-dark);
+  --shadow-t-yellow-dark: 0px 0px 5px 1px var(--yellow-dark);
+  --shadow-t-purple-dark: 0px 0px 5px 1px var(--purple-dark);
 }
