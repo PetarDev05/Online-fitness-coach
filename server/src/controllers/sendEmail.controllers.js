@@ -16,15 +16,17 @@ export const sendEmail = async (req, res) => {
     });
 
     if (error) {
-      return res
-        .status(400)
-        .json({ message: "Something went wrong. Try again later" });
+      return res.status(400).json({
+        message: "Something went wrong. Try again later",
+        status: "error",
+      });
     }
 
-    res.status(200).json({ message: "Message sent! Thanks for reaching out" });
+    res.status(200).json({ message: "Message sent! Thanks for reaching out", status: "success" });
   } catch (error) {
     res.status(400).json({
       message: "Something went wrong. Try again later",
+      status: "error",
     });
   }
 };

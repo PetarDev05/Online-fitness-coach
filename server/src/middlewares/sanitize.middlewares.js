@@ -13,6 +13,7 @@ export const sanitizeContact = (req, res, next) => {
   } catch (error) {
     res.status(400).json({
       message: "Data format is invalid",
+      status: "error",
     });
   }
 };

@@ -19,7 +19,28 @@ const App = () => {
       <Programs />
       <Contact />
       <Footer />
-      <Toaster />
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            borderRadius: "8px",
+            fontSize: "14px",
+          },
+          success: {
+            style: {
+              background: "#16a34a",
+              color: "#ffffff",
+            },
+          },
+          error: {
+            style: {
+              background: "#dc2626",
+              color: "#ffffff",
+            },
+          },
+        }}
+      />
     </div>
   );
 };

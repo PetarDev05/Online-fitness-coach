@@ -5,6 +5,7 @@ import emailRouter from "./src/routes/email.routes.js";
 import { contactLimiter } from "./src/middlewares/rateLimit.middlewares.js";
 import { validateContact } from "./src/middlewares/validate.middlewares.js";
 import { sanitizeContact } from "./src/middlewares/sanitize.middlewares.js";
+import { validateFormat } from "./src/middlewares/format.middlewares.js";
 
 export const app = express();
 
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(contactLimiter);
+app.use(validateFormat);
 app.use(validateContact);
 app.use(sanitizeContact);
 app.use((req, res, next) => {

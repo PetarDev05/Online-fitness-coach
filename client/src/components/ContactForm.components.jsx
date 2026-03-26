@@ -3,8 +3,6 @@ import useSendEmail from "../hooks/useSendEmail.hooks.jsx";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { toast } from "react-hot-toast";
 
-const notify = (message) => toast(message);
-
 const ContactForm = () => {
   const { isLoading, sendEmail } = useSendEmail();
 
@@ -21,11 +19,14 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!input.name || !input.email || !input.message) {
-      return;
-    }
+    
     const result = await sendEmail(input);
-    notify(result);
+    
+    if (result.status === "success") {
+      toast.success(result.message);
+    } else {
+      toast.error(result.message);
+    }
     setInput({
       name: "",
       email: "",
@@ -65,10 +66,10 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm py-2 sm:py-3 rounded-lg cursor-pointer flex items-center justify-center"
+        className="w-full bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm h-11 rounded-lg cursor-pointer flex items-center justify-center"
       >
         {isLoading ? (
-          <AiOutlineLoading3Quarters className="animate-spin text-2xl font-bold" />
+          <AiOutlineLoading3Quarters className="animate-spin text-xl font-bold" />
         ) : (
           "Submit"
         )}
