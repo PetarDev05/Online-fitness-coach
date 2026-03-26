@@ -6,7 +6,7 @@ const useSendEmail = () => {
   const sendEmail = async (input) => {
     try {
       setIsLoading(true);
-      const url = VITE_BACKEND_URL;
+      const url = `${VITE_BACKEND_URL}/email`;
       const options = {
         method: "POST",
         body: JSON.stringify(input),
