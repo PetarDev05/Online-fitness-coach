@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen flex flex-col items-center justify-center gap-7 bg-(--bg-light) dark:bg-black  text-(--text-light) dark:text-(--text-dark) transition-all duration-400 overflow-x-hidden"
+      className="relative w-full min-h-screen flex flex-col items-center justify-center gap-7 bg-(--bg-light) dark:bg-black  text-(--text-light) dark:text-(--text-dark) transition-all duration-400 overflow-x-clip"
     >
       <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-50 left-1/5 -translate-1/2"></div>
       <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-2/3 left-1/2 -translate-1/2"></div>
@@ -24,28 +24,16 @@ const Hero = () => {
       <div className="flex flex-row items-center gap-5 z-10">
         <a
           href="#programs"
-          className="px-5 py-1.75 rounded-lg bg-transparent text-(--primary-light) dark:text-(--primary-dark) text-lg cursor-pointer border"
+          className="px-7 py-3 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm cursor-pointer"
         >
           Check programs
         </a>
         <a
           href="#contact"
-          className="px-5 py-1.75 rounded-lg bg-transparent text-(--primary-light) dark:text-(--primary-dark) text-lg cursor-pointer border"
+          className="px-7 py-3 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm cursor-pointer"
         >
           Get in touch
         </a>
-        {/* <a
-          href="#programs"
-          className="px-5 py-2 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-lg cursor-pointer"
-        >
-          Check programs
-        </a>
-        <a
-          href="#contact"
-          className="px-5 py-2 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-lg cursor-pointer"
-        >
-          Get in touch
-        </a> */}
       </div>
     </section>
   );

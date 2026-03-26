@@ -30,7 +30,7 @@
   /* --------------------------- */
 
   --primary-dark: #e1e1e1;
-  --text-dark: #a1a1a1;
+  --text-dark: #b0b0b0;
   --heading-dark: #ececec;
   --bg-dark: #060606;
   --card-dark: #fff;
@@ -78,14 +78,16 @@ a {
   font-family: "Inter";
 }
 
-button {
+button,
+a {
   font-weight: 500;
 }
 
 div > .logo,
 button,
 #price,
-li {
+li,
+a {
   font-family: "Poppins";
 }
 
@@ -115,4 +117,7 @@ li {
   --shadow-t-blue-dark: 0px 0px 5px 1px var(--blue-dark);
   --shadow-t-yellow-dark: 0px 0px 5px 1px var(--yellow-dark);
   --shadow-t-purple-dark: 0px 0px 5px 1px var(--purple-dark);
+
+  --shadow-p-light: 0px 0px 25px 7px var(--image-purple);
+  --shadow-p-dark: 0px 0px 25px 7px var(--purple-dark);
 }

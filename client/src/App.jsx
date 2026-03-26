@@ -1,9 +1,10 @@
-import Contact from "./pages/Contact.pages.jsx";
-import Hero from "./pages/Hero.pages.jsx";
-import Programs from "./pages/Programs.pages.jsx";
 import Navbar from "./components/Navbar.components.jsx";
-import AboutMe from "./pages/AboutMe.pages.jsx";
+import Hero from "./pages/Hero.pages.jsx";
 import Testimonials from "./pages/Testimonials.pages.jsx";
+import AboutMe from "./pages/AboutMe.pages.jsx";
+import Programs from "./pages/Programs.pages.jsx";
+import Contact from "./pages/Contact.pages.jsx";
+import Footer from "./components/Footer.components.jsx";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <AboutMe />
       <Programs />
       <Contact />
+      <Footer />
       <Toaster />
     </div>
   );

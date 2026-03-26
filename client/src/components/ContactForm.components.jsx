@@ -65,7 +65,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm h-11 rounded-lg cursor-pointer flex items-center justify-center"
+        className="w-full bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm py-3 rounded-lg cursor-pointer flex items-center justify-center"
       >
         {isLoading ? (
           <AiOutlineLoading3Quarters className="animate-spin text-2xl font-bold" />
