@@ -18,13 +18,13 @@ export const sendEmail = async (req, res) => {
     if (error) {
       return res
         .status(400)
-        .json({ message: "Something went wrong. Try again later." });
+        .json({ message: "Something went wrong. Try again later" });
     }
 
     res.status(200).json({ message: "Message sent! Thanks for reaching out" });
   } catch (error) {
     res.status(400).json({
-      message: error.message,
+      message: "Something went wrong. Try again later",
     });
   }
 };

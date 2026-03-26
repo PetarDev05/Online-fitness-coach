@@ -60,7 +60,7 @@ const ContactForm = () => {
         onChange={handleChange}
         value={input.message}
         className="w-full p-3 rounded-lg border border-(--border-light) dark:border-(--border-dark) outline-none focus:border text-(--primary-light) dark:text-(--primary-dark) focus:border-(--primary-light) dark:focus:border-(--primary-dark) min-h-30 resize-none"
-        placeholder="Your message..."
+        placeholder="Your message (optional) ..."
       ></textarea>
       <button
         type="submit"

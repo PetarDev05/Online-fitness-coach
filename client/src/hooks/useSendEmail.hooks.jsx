@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const useSendEmail = () => {
-  const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL
+  const VITE_BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
   const [isLoading, setIsLoading] = useState(false);
   const sendEmail = async (input) => {
     try {
@@ -21,7 +21,7 @@ const useSendEmail = () => {
       if (!response.ok) {
         return parsedResponse.message;
       }
-      
+
       return parsedResponse.message;
     } catch (error) {
       return error.message;
