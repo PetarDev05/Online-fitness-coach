@@ -6,7 +6,8 @@ const Menu = () => {
 
   return (
     <div
-      className={`fixed left-0 right-0 w-full h-screen flex flex-col items-center justify-start gap-7 min-[870px]:hidden py-20 px-7 z-45 bg-(--white)/50 dark:bg-(--bg-dark)/50 backdrop-blur-xl ${showMenu ? "translate-y-17.25" : "-translate-y-full"} transition-all duration-400`}
+      id="menu"
+      className={`fixed left-0 right-0 w-full flex flex-col items-center justify-center gap-7 min-[870px]:hidden px-7 z-45 bg-(--white)/50 dark:bg-(--bg-dark)/50 backdrop-blur-xl ${showMenu ? "translate-y-17.25" : "-translate-y-full"} transition-all duration-400`}
     >
       <a
         href="#contact"

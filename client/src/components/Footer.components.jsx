@@ -19,7 +19,7 @@ const Footer = () => {
     {
       id: "02",
       title: "Contact",
-      items: ["Email", "Instagram", "Support", "Consulatations"],
+      items: ["Email", "Instagram", "Support", "Consultations"],
     },
     {
       id: "03",
@@ -34,7 +34,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full py-20 px-10 flex flex-row items-center justify-center gap-20 bg-(--bg-light) dark:bg-(--bg-dark) backdrop-blur-xl border-t border-(--nav-border-light) dark:border-(--nav-border-dark) z-25 transition-all duration-400">
+    <footer className="w-full py-10 px-10 flex flex-col items-center justify-center gap-20 bg-(--bg-light) dark:bg-(--bg-dark) backdrop-blur-xl border-t border-(--nav-border-light) dark:border-(--nav-border-dark) z-25 transition-all duration-400">
       <div className="flex flex-col items-center gap-5 text-(--primary-light) dark:text-(--primary-dark)">
         <span className="font-semibold">Follow me on:</span>
         <div className="flex flex-row items-center gap-3">
@@ -44,9 +44,15 @@ const Footer = () => {
           <FaLinkedin className="text-2xl cursor-pointer" />
         </div>
       </div>
-      {footerData.map((pillar) => (
-        <FooterPillar key={pillar.id} pillar={pillar} />
-      ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20">
+        {footerData.map((pillar) => (
+          <FooterPillar key={pillar.id} pillar={pillar} />
+        ))}
+      </div>
+      <span className="flex flex-row items-center gap-4 text-(--primary-light) dark:text-(--primary-dark)">
+        &copy; All rights reserved. 2026 &copy;
+        
+      </span>
     </footer>
   );
 };

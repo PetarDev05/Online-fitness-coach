@@ -55,17 +55,17 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="w-full min-h-screen flex flex-col items-center justify-center gap-7 bg-(--bg-light) dark:bg-black  text-(--text-light) dark:text-(--text-dark) transition-all duration-400 pt-15 pb-5"
+      className="w-full min-h-screen flex flex-col items-center justify-center gap-7 bg-(--bg-light) dark:bg-black  text-(--text-light) dark:text-(--text-dark) transition-all duration-400 pt-20 pb-10"
     >
-      <h1 className="text-(--heading-light) dark:text-(--heading-dark)">
+      <h1 className="text-(--heading-light) dark:text-(--heading-dark) text-4xl md:text-5xl px-5">
         Training experience beyond expectations
       </h1>
-      <p className="max-w-150 text-center">
+      <p className="max-w-150 text-sm sm:text-lg lg:text-xl px-5 text-center">
         Real people, real results. These are just some of the clients who
         followed a structured plan and stayed consistent — without extreme diets
         or unrealistic routines.
       </p>
-      <div className="w-full max-w-200 grid grid-cols-2 gap-5">
+      <div className="px-5 sm:px-10 max-w-200 grid grid-cols-1 min-[800px]:grid-cols-2 gap-5">
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.id} testimonial={testimonial} />
         ))}

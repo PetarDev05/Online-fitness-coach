@@ -36,14 +36,14 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-120 p-7 flex flex-col items-center gap-7 rounded-xl z-20"
+      className="w-full max-w-120 px-5 pb-5 sm:px-7 sm:pb-7 pt-3 flex flex-col items-center gap-5 sm:gap-7 rounded-xl z-20"
     >
       <input
         name="name"
         type="text"
         onChange={handleChange}
         value={input.name}
-        className="w-full py-3 px-4 border border-(--border-light) dark:border-(--border-dark) rounded-lg outline-none text-(--primary-light) dark:text-(--primary-dark) focus:border focus:border-(--primary-light) dark:focus:border-(--primary-dark)"
+        className="w-full py-2 sm:py-3 px-3 sm:px-4 border border-(--border-light) dark:border-(--border-dark) rounded-lg outline-none text-(--primary-light) dark:text-(--primary-dark) focus:border focus:border-(--primary-light) dark:focus:border-(--primary-dark)"
         placeholder="Name"
       />
       <input
@@ -51,7 +51,7 @@ const ContactForm = () => {
         type="email"
         onChange={handleChange}
         value={input.email}
-        className="w-full py-3 px-4 border border-(--border-light) dark:border-(--border-dark) rounded-lg outline-none text-(--primary-light) dark:text-(--primary-dark) focus:border focus:border-(--primary-light) dark:focus:border-(--primary-dark)"
+        className="w-full py-2 sm:py-3 px-3 sm:px-4 border border-(--border-light) dark:border-(--border-dark) rounded-lg outline-none text-(--primary-light) dark:text-(--primary-dark) focus:border focus:border-(--primary-light) dark:focus:border-(--primary-dark)"
         placeholder="E-mail"
       />
       <textarea
@@ -65,7 +65,7 @@ const ContactForm = () => {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm py-3 rounded-lg cursor-pointer flex items-center justify-center"
+        className="w-full bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm py-2 sm:py-3 rounded-lg cursor-pointer flex items-center justify-center"
       >
         {isLoading ? (
           <AiOutlineLoading3Quarters className="animate-spin text-2xl font-bold" />

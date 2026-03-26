@@ -13,12 +13,12 @@ const App = () => {
     <div className="w-full flex flex-col">
       <Navbar />
       <Menu />
-      {/* <Hero /> */}
-      {/* <Testimonials /> */}
-      {/* <AboutMe /> */}
-      {/* <Programs /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Hero />
+      <Testimonials />
+      <AboutMe />
+      <Programs />
+      <Contact />
+      <Footer />
       <Toaster />
     </div>
   );

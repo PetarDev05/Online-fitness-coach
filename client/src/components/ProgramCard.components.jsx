@@ -3,7 +3,7 @@ import { TbTopologyStarRing3 } from "react-icons/tb";
 const ProgramCard = ({ program }) => {
   return (
     <div
-      className={`relative w-full p-7 flex flex-col items-center justify-between gap-5 border border-(--card-border-light) dark:border-(--card-border-dark) rounded-xl overflow-hidden ${program.id === "02" ? "shadow-pro-light dark:shadow-pro-dark" : "shadow-program-light dark:shadow-program-dark"}`}
+      className={`relative w-full max-w-85 p-7 flex flex-col items-center justify-between gap-5 border border-(--card-border-light) dark:border-(--card-border-dark) rounded-xl overflow-hidden ${program.id === "02" ? "shadow-pro-light dark:shadow-pro-dark" : "shadow-program-light dark:shadow-program-dark"}`}
     >
       {program.id === "02" && (
         <div className="w-50 h-50 transition-all duration-400 rounded-full filter mix-blend-multiply dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-1/4 left-3/4 -translate-1/2"></div>
@@ -34,9 +34,9 @@ const ProgramCard = ({ program }) => {
         {program.features.map((feature, i) => (
           <li
             key={i}
-            className="w-full flex flex-row items-center gap-2 text-md"
+            className="w-full flex flex-row items-start gap-2 text-md"
           >
-            <TbTopologyStarRing3 className="text-(--green)" />
+            <TbTopologyStarRing3 className="text-(--green) mt-1" />
             {feature}
           </li>
         ))}

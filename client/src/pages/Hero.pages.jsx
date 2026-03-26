@@ -4,33 +4,33 @@ const Hero = () => {
       id="home"
       className="relative w-full min-h-screen flex flex-col items-center justify-center gap-7 bg-(--bg-light) dark:bg-black  text-(--text-light) dark:text-(--text-dark) transition-all duration-400 overflow-x-clip"
     >
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-50 left-1/5 -translate-1/2"></div>
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-2/3 left-1/2 -translate-1/2"></div>
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--blue-light) dark:bg-(--blue-dark) absolute top-4/5 left-1/4 -translate-1/2"></div>
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--yellow-light) dark:bg-(--yellow-dark) absolute top-3/5 left-3/4 -translate-1/2"></div>
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--yellow-light) dark:bg-(--yellow-dark) absolute top-3/5 left-0 -translate-1/2"></div>
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--blue-light) dark:bg-(--blue-dark) absolute top-0 left-3/4 -translate-1/2"></div>
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-3/4 -right-50 -translate-1/2"></div>
-      <div className="w-60 h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--yellow-light) dark:bg-(--yellow-dark) absolute top-30 left-1/2 -translate-1/2"></div>
-      <h1 className="text-(--heading-light) dark:text-(--heading-dark) max-w-250 text-center transition-all duration-400 z-10">
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-50 left-1/5 -translate-1/2"></div>
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-2/3 left-1/2 -translate-1/2"></div>
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--blue-light) dark:bg-(--blue-dark) absolute top-5/7 left-1/4 -translate-1/2"></div>
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--yellow-light) dark:bg-(--yellow-dark) absolute top-3/5 left-3/4 -translate-1/2"></div>
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--yellow-light) dark:bg-(--yellow-dark) absolute top-3/5 left-0 -translate-1/2"></div>
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--blue-light) dark:bg-(--blue-dark) absolute top-0 left-3/4 -translate-1/2"></div>
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--purple-light) dark:bg-(--purple-dark) absolute top-3/4 -right-50 -translate-1/2"></div>
+      <div className="w-30 sm:w-40 md:w-50 lg:w-60 h-30 sm:h-40 md:h-50 lg:h-60 transition-all duration-400 rounded-full filter mix-blend-multiply  dark:mix-blend-normal blur-2xl bg-(--yellow-light) dark:bg-(--yellow-dark) absolute top-30 left-1/2 -translate-1/2"></div>
+      <h1 className="text-(--heading-light) dark:text-(--heading-dark) max-w-250 text-center transition-all duration-400 z-10 px-10 text-4xl sm:text-5xl md:text-6xl">
         Online <span className="text-(--image-blue)">Fitness</span> Coaching
         That <span className="text-(--image-yellow)">Actually</span> Gets{" "}
         <span className="text-(--image-purple)">Results</span>
       </h1>
-      <p className="max-w-150 text-center z-10">
+      <p className="max-w-150 text-sm sm:text-lg lg:text-xl px-5 text-center z-10">
         Personalized training and nutrition plans designed to help you lose fat,
         build muscle, and stay consistent — without extreme diets or burnout.
       </p>
       <div className="flex flex-row items-center gap-5 z-10">
         <a
           href="#programs"
-          className="px-7 py-3 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm cursor-pointer"
+          className="px-4 sm:px-7 py-2 sm:py-3 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm cursor-pointer"
         >
           Check programs
         </a>
         <a
           href="#contact"
-          className="px-7 py-3 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm cursor-pointer"
+          className="px-4 sm:px-7 py-2 sm:py-3 rounded-lg bg-(--primary-light) dark:bg-(--primary-dark) text-(--primary-dark) dark:text-(--primary-light) text-sm cursor-pointer"
         >
           Get in touch
         </a>

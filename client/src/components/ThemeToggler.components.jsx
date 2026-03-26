@@ -8,7 +8,7 @@ const ThemeToggler = () => {
   return (
     <div
       onClick={switchTheme}
-      className="relative w-18 h-8 rounded-full bg-(--primary-light) flex items-center px-0.75 dark:bg-(--primary-dark) cursor-pointer transition-colors duration-500 ease-in-out"
+      className="relative w-17.5 h-8 rounded-full bg-(--primary-light) flex items-center px-0.75 dark:bg-(--primary-dark) cursor-pointer transition-colors duration-500 ease-in-out"
     >
       <LuSunMedium className="absolute text-(--primary-light) z-10 left-1.25 text-xl" />
       <LuMoon className="absolute  text-(--primary-dark) z-10 right-1.5 text-xl" />

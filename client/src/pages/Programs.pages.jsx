@@ -52,16 +52,16 @@ const Programs = () => {
   return (
     <section
       id="programs"
-      className="relative w-full min-h-screen flex flex-col items-center justify-center gap-7 bg-(--bg-light) dark:bg-black text-(--text-light) dark:text-(--text-dark) transition-all duration-400"
+      className="relative w-full min-h-screen flex flex-col items-center justify-center gap-7 bg-(--bg-light) dark:bg-black text-(--text-light) dark:text-(--text-dark) transition-all duration-400 py-20"
     >
-      <h1 className="text-(--heading-light) dark:text-(--heading-dark) z-20">
+      <h1 className="text-(--heading-light) dark:text-(--heading-dark) text-4xl md:text-5xl px-5">
         Pricing is simple with no hidden fees
       </h1>
-      <p className="max-w-150 text-center z-20">
+      <p className="max-w-150 text-sm sm:text-lg lg:text-xl px-5 text-center z-20">
         Choose the program that best fits your experience level, as well as your
         training and fitness goals
       </p>
-      <div className="w-full max-w-6/8 grid grid-cols-3 gap-10">
+      <div className="px-5 sm:px-10 grid grid-cols-1 min-[1140px]:grid-cols-3 gap-10">
         {programs.map((program) => (
           <ProgramCard key={program.id} program={program} />
         ))}
