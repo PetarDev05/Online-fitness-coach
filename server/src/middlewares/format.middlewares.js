@@ -1,7 +1,7 @@
 import validator from "validator";
 
 export const validateFormat = (req, res, next) => {
-  const { name, email } = req.body;
+  const { name, email, message } = req.body;
 
   if (!name || !email) {
     return res.status(400).json({
