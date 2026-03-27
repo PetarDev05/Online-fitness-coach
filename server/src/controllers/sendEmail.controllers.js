@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 import { render } from "@react-email/render";
-import ContactEmail from "../emails/ContactEmail.jsx";
+import ContactEmail from "../emails/ContactEmail.emails.jsx";
 
 export const sendEmail = async (req, res) => {
   try {
