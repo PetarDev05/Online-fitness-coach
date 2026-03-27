@@ -15,7 +15,7 @@ export const sendEmail = async (req, res) => {
 
     if (error) {
       return res.status(400).json({
-        message: "Something went wrong. Try again later",
+        message: error.message,
         status: "error",
       });
     }
@@ -27,6 +27,7 @@ export const sendEmail = async (req, res) => {
   } catch (error) {
     res.status(400).json({
       message: "Something went wrong. Try again later",
+      desc: error.message,
       status: "error",
     });
   }

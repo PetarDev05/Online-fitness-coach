@@ -17,7 +17,8 @@ const useSendEmail = () => {
 
       const response = await fetch(url, options);
       const parsedResponse = await response.json();
-
+      console.log(parsedResponse);
+      
       return parsedResponse;
     } catch (error) {
       return error;
