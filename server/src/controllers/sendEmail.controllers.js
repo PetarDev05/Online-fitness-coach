@@ -7,7 +7,7 @@ export const sendEmail = async (req, res) => {
     const html = getEmailTemplate(name, email, message);
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
-      from: `<${process.env.VERIFIED_DOMAIN}>`,
+      from: `${process.env.VERIFIED_DOMAIN}`,
       to: [`${process.env.TARGET_ADDRESS}`],
       subject: "New Contact Form Message",
       html,
