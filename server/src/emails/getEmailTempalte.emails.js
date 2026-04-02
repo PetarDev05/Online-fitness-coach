@@ -39,14 +39,18 @@ export const getEmailTemplate = (name, email, message) => `
             <tr>
               <td style="background:#fafafa; padding:15px; border-radius:8px;">
                 
-                <p style="font-size:12px; color:#888; margin:10px 0 5px;">Name</p>
-                <p style="font-size:14px; color:#111; margin:0;">${name}</p>
+                <p style="font-size:14px; color:#888; margin:10px 0 5px;">Name:</p>
+                <p style="font-size:16px; color:#111; margin:0;">${name}</p>
 
-                <p style="font-size:12px; color:#888; margin:15px 0 5px;">Email</p>
-                <p style="font-size:14px; color:#111; margin:0;">${email}</p>
+                <hr style="border:none; border-top:1px solid #e5e7eb; margin: 5px" />
 
-                <p style="font-size:12px; color:#888; margin:15px 0 5px;">Message</p>
-                <p style="font-size:14px; color:#111; margin:0; white-space:pre-line;">
+                <p style="font-size:14px; color:#888; margin:15px 0 5px;">Email:</p>
+                <p style="font-size:16px; color:#111; margin:0;">${email}</p>
+
+                <hr style="border:none; border-top:1px solid #e5e7eb; margin: 5px" />
+
+                <p style="font-size:14px; color:#888; margin:15px 0 5px;">Message:</p>
+                <p style="font-size:16px; color:#111; margin:0;">
                   ${message}
                 </p>
 
